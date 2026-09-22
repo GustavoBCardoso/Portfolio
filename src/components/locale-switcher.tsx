@@ -23,7 +23,7 @@ export function LocaleSwitcher({ current, label }: Props) {
               lang={locale}
               title={localeLabels[locale]}
               aria-current={active ? "true" : undefined}
-              className={`block px-2.5 py-1 uppercase no-underline transition-colors duration-200 ${
+              className={`relative block px-2.5 py-1 uppercase after:absolute after:inset-x-0 after:-inset-y-[9px] after:content-[''] no-underline transition-colors duration-200 ${
                 active ? "bg-ink text-paper" : "text-ink hover:bg-highlight"
               }`}
             >

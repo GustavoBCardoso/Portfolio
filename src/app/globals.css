@@ -14,6 +14,8 @@
   --color-rule: #d3d8df;
   --color-rule-soft: #e4e7eb;
   --color-highlight: #d6e2ff;
+  --color-on-lane: #ffffff;
+  --color-shadow: rgb(19 33 58 / 0.32);
 
   /* Tracks (band colours carry white text at ≥4.5:1) */
   --color-lane-data: #2d55c8;
@@ -32,6 +34,58 @@
   --container-sheet: 90rem;
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* `dark:` follows the chosen theme on <html data-theme>, not only the OS setting. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/*
+ * Dark theme: the same sheet printed in negative. Navy ink becomes the ground,
+ * paper becomes the type. Tracks keep their meaning; they lighten so they read
+ * on navy, and bands flip to dark type.
+ */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-paper: #0d1526;
+  --color-sheet: #121c31;
+  --color-ink: #e6e9ef;
+  --color-ink-soft: #b9c1cf;
+  --color-ink-mute: #8f9aae;
+  --color-rule: #2c3852;
+  --color-rule-soft: #1c273f;
+  --color-highlight: #26396a;
+  --color-on-lane: #0b1322;
+  --color-shadow: rgb(0 0 0 / 0.55);
+
+  --color-lane-data: #8aa6ff;
+  --color-lane-data-tint: #1a2748;
+  --color-lane-backend: #5fd39b;
+  --color-lane-backend-tint: #13301f;
+  --color-lane-frontend: #ff9d66;
+  --color-lane-frontend-tint: #33211a;
+  --color-lane-practice: #c89bf0;
+  --color-lane-practice-tint: #291f3b;
+}
+
+/* Switching theme prints the new sheet over the old one, top to bottom. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-new(root) {
+  animation: theme-print 560ms var(--ease-out-expo);
+}
+
+@keyframes theme-print {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
 }
 
 @layer base {

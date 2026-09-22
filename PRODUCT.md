@@ -25,7 +25,8 @@ Portfólio pessoal de um desenvolvedor full-stack. O site existe para transforma
 Desenvolvedor full-stack de nível **pleno** (não sênior) que está direcionando a carreira para **back-end**.
 
 - A maior parte da experiência e do conhecimento atual está no front-end, o que é um diferencial real: ele entende o produto de ponta a ponta.
-- O objetivo agora é uma vaga voltada para back-end ou full-stack com peso em back-end.
+- O objetivo agora é uma vaga voltada para back-end ou full-stack com peso em back-end, de preferência com **Java e Spring Boot**, que é a stack-alvo. C#/.NET (Akna) segue como experiência real, mas não como direção declarada.
+- Tom: profissional e direto, sem frases de efeito ("Sua equipe?", "a disciplina que falta").
 - Ele está abertamente disposto a aprender, e isso faz parte da proposta, não é algo a esconder.
 
 O site deve comunicar essa transição de forma honesta: força comprovada no front, direção clara para o back e o nível pleno assumido.
@@ -58,5 +59,5 @@ O site deve comunicar essa transição de forma honesta: força comprovada no fr
 1. **Honestidade de nível.** Apresentar o perfil como pleno e em transição para back-end. Nada de linguagem de Staff+, "arquiteto de sistemas distribuídos" ou alegações de escala que não correspondem à experiência real.
 2. **Evidência acima de adjetivo.** Cada competência mostrada deve apontar para um projeto, repositório, demo ou experiência concreta.
 3. **Decisão rápida.** O recrutador precisa entender perfil, foco e disponibilidade logo na primeira tela, e chegar ao contato sem esforço.
-4. **Curiosidade como ativo.** A vontade de aprender e o interesse por back-end aparecem como direção deliberada, demonstrada por experiências reais e estudos em curso (C#/.NET, pós em IA Aplicada).
+4. **Curiosidade como ativo.** A vontade de aprender e o interesse por back-end aparecem como direção deliberada, demonstrada por experiências reais e estudos em curso (Java e Spring Boot, pós em IA Aplicada).
 5. **Paridade bilíngue.** PT e EN têm o mesmo conteúdo e qualidade; nenhuma versão é tradução de segunda classe.

@@ -1,6 +1,7 @@
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { LocaleSwitcher } from "./locale-switcher";
+import { ThemeSwitcher } from "./theme-switcher";
 
 type Props = { lang: Locale; dict: Dictionary };
 
@@ -35,7 +36,10 @@ export function SiteHeader({ lang, dict }: Props) {
             ))}
           </ul>
         </nav>
-        <LocaleSwitcher current={lang} label={dict.nav.language} />
+        <div className="flex items-center gap-2">
+          <ThemeSwitcher label={dict.nav.theme} light={dict.nav.themeLight} dark={dict.nav.themeDark} />
+          <LocaleSwitcher current={lang} label={dict.nav.language} />
+        </div>
       </div>
     </header>
   );

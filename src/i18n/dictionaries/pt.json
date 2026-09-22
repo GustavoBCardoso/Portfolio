@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Gustavo Borges Cardoso · Desenvolvedor Full-Stack",
-    "description": "Desenvolvedor full-stack pleno com mais de 7 anos em aplicações web. Base sólida em front-end, cursando a rota back-end com C#/.NET, APIs e dados."
+    "description": "Desenvolvedor full-stack pleno com mais de 7 anos em aplicações web. Base sólida em front-end e foco atual em back-end com Java e Spring Boot, APIs e dados."
   },
   "nav": {
     "label": "Seções",
@@ -9,11 +9,14 @@
     "history": "Histórico",
     "reference": "Parecer",
     "contact": "Contato",
-    "language": "Idioma"
+    "language": "Idioma",
+    "theme": "Tema",
+    "themeLight": "Modo claro",
+    "themeDark": "Modo escuro"
   },
   "hero": {
     "name": "Gustavo Borges Cardoso",
-    "summary": "Desenvolvedor full-stack pleno com mais de 7 anos em aplicações web, base forte em front-end e agora na rota back-end com C#/.NET, APIs e dados.",
+    "summary": "Desenvolvedor full-stack pleno com mais de 7 anos em aplicações web, base forte em front-end e foco atual em back-end com Java e Spring Boot, APIs e dados.",
     "fields": [
       { "label": "Curso", "value": "Desenvolvimento Full-Stack" },
       { "label": "Nível", "value": "Pleno" },
@@ -61,7 +64,7 @@
   },
   "contact": {
     "title": "Tem uma vaga para esta rota?",
-    "body": "Busco uma posição pleno, full-stack ou com foco em back-end, num time que evolua o produto e a técnica, onde eu siga aprendendo e resolvendo problemas reais. Respondo por e-mail, LinkedIn ou WhatsApp."
+    "body": "Busco uma posição pleno, Full-Stack ou Back-end, de preferência com Java e Spring Boot, num time que evolua o produto e a técnica, onde eu siga aprendendo e resolvendo problemas reais. Respondo por e-mail, LinkedIn ou WhatsApp."
   },
   "footer": {
     "updated": "Grade atualizada em setembro de 2026"

@@ -1,67 +1,430 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-22T16:00:00-03:00",
+  "generatedAt": "2026-09-22T18:00:00-03:00",
   "title": "Design System: Fluxograma Curricular",
   "extensions": {
     "colorMeta": {
-      "ink": { "role": "primary", "displayName": "Institutional Navy Ink", "canonical": "#13213a", "tonalRamp": ["oklch(15% 0.05 262)", "oklch(24% 0.05 262)", "oklch(35% 0.05 262)", "oklch(46% 0.05 262)", "oklch(58% 0.05 262)", "oklch(70% 0.05 262)", "oklch(82% 0.04 262)", "oklch(95% 0.02 262)"] },
-      "lane-data": { "role": "secondary", "displayName": "Registry Blue", "canonical": "#2d55c8", "tonalRamp": ["oklch(15% 0.18 265)", "oklch(26% 0.18 265)", "oklch(37% 0.18 265)", "oklch(50% 0.18 265)", "oklch(60% 0.15 265)", "oklch(71% 0.11 265)", "oklch(82% 0.07 265)", "oklch(95% 0.02 265)"] },
-      "lane-data-tint": { "role": "secondary", "displayName": "Blue Tint", "canonical": "#e7edfb" },
-      "lane-backend": { "role": "secondary", "displayName": "Ledger Green", "canonical": "#17784a", "tonalRamp": ["oklch(15% 0.11 155)", "oklch(26% 0.11 155)", "oklch(37% 0.11 155)", "oklch(51% 0.11 155)", "oklch(60% 0.11 155)", "oklch(71% 0.09 155)", "oklch(82% 0.06 155)", "oklch(95% 0.02 155)"] },
-      "lane-backend-tint": { "role": "secondary", "displayName": "Green Tint", "canonical": "#e1f1e8" },
-      "lane-frontend": { "role": "secondary", "displayName": "Stamp Orange", "canonical": "#b84c19", "tonalRamp": ["oklch(15% 0.16 42)", "oklch(26% 0.16 42)", "oklch(37% 0.16 42)", "oklch(48% 0.16 42)", "oklch(56% 0.16 42)", "oklch(70% 0.12 42)", "oklch(82% 0.07 42)", "oklch(95% 0.02 42)"] },
-      "lane-frontend-tint": { "role": "secondary", "displayName": "Orange Tint", "canonical": "#fbeae0" },
-      "lane-practice": { "role": "secondary", "displayName": "Seminar Plum", "canonical": "#7a3f9e", "tonalRamp": ["oklch(15% 0.15 310)", "oklch(26% 0.15 310)", "oklch(37% 0.15 310)", "oklch(46% 0.15 310)", "oklch(59% 0.13 310)", "oklch(70% 0.1 310)", "oklch(82% 0.06 310)", "oklch(95% 0.02 310)"] },
-      "lane-practice-tint": { "role": "secondary", "displayName": "Plum Tint", "canonical": "#f0e7f6" },
-      "paper": { "role": "neutral", "displayName": "Sulfite Paper", "canonical": "#f5f6f3", "tonalRamp": ["oklch(15% 0.004 120)", "oklch(26% 0.004 120)", "oklch(37% 0.004 120)", "oklch(48% 0.004 120)", "oklch(59% 0.004 120)", "oklch(70% 0.004 120)", "oklch(81% 0.004 120)", "oklch(97% 0.004 120)"] },
-      "sheet": { "role": "neutral", "displayName": "Sheet White", "canonical": "#ffffff" },
-      "ink-soft": { "role": "neutral", "displayName": "Soft Ink", "canonical": "#3d4964" },
-      "ink-mute": { "role": "neutral", "displayName": "Muted Ink", "canonical": "#56627a" },
-      "rule": { "role": "neutral", "displayName": "Rule Grey", "canonical": "#d3d8df" },
-      "rule-soft": { "role": "neutral", "displayName": "Grid Grey", "canonical": "#e4e7eb" },
-      "highlight": { "role": "neutral", "displayName": "Highlighter Blue", "canonical": "#d6e2ff" }
+      "ink": {
+        "role": "primary",
+        "displayName": "Institutional Navy Ink",
+        "canonical": "#13213a",
+        "tonalRamp": [
+          "oklch(15% 0.05 262)",
+          "oklch(24% 0.05 262)",
+          "oklch(35% 0.05 262)",
+          "oklch(46% 0.05 262)",
+          "oklch(58% 0.05 262)",
+          "oklch(70% 0.05 262)",
+          "oklch(82% 0.04 262)",
+          "oklch(95% 0.02 262)"
+        ]
+      },
+      "lane-data": {
+        "role": "secondary",
+        "displayName": "Registry Blue",
+        "canonical": "#2d55c8",
+        "tonalRamp": [
+          "oklch(15% 0.18 265)",
+          "oklch(26% 0.18 265)",
+          "oklch(37% 0.18 265)",
+          "oklch(50% 0.18 265)",
+          "oklch(60% 0.15 265)",
+          "oklch(71% 0.11 265)",
+          "oklch(82% 0.07 265)",
+          "oklch(95% 0.02 265)"
+        ]
+      },
+      "lane-data-tint": {
+        "role": "secondary",
+        "displayName": "Blue Tint",
+        "canonical": "#e7edfb"
+      },
+      "lane-backend": {
+        "role": "secondary",
+        "displayName": "Ledger Green",
+        "canonical": "#17784a",
+        "tonalRamp": [
+          "oklch(15% 0.11 155)",
+          "oklch(26% 0.11 155)",
+          "oklch(37% 0.11 155)",
+          "oklch(51% 0.11 155)",
+          "oklch(60% 0.11 155)",
+          "oklch(71% 0.09 155)",
+          "oklch(82% 0.06 155)",
+          "oklch(95% 0.02 155)"
+        ]
+      },
+      "lane-backend-tint": {
+        "role": "secondary",
+        "displayName": "Green Tint",
+        "canonical": "#e1f1e8"
+      },
+      "lane-frontend": {
+        "role": "secondary",
+        "displayName": "Stamp Orange",
+        "canonical": "#b84c19",
+        "tonalRamp": [
+          "oklch(15% 0.16 42)",
+          "oklch(26% 0.16 42)",
+          "oklch(37% 0.16 42)",
+          "oklch(48% 0.16 42)",
+          "oklch(56% 0.16 42)",
+          "oklch(70% 0.12 42)",
+          "oklch(82% 0.07 42)",
+          "oklch(95% 0.02 42)"
+        ]
+      },
+      "lane-frontend-tint": {
+        "role": "secondary",
+        "displayName": "Orange Tint",
+        "canonical": "#fbeae0"
+      },
+      "lane-practice": {
+        "role": "secondary",
+        "displayName": "Seminar Plum",
+        "canonical": "#7a3f9e",
+        "tonalRamp": [
+          "oklch(15% 0.15 310)",
+          "oklch(26% 0.15 310)",
+          "oklch(37% 0.15 310)",
+          "oklch(46% 0.15 310)",
+          "oklch(59% 0.13 310)",
+          "oklch(70% 0.1 310)",
+          "oklch(82% 0.06 310)",
+          "oklch(95% 0.02 310)"
+        ]
+      },
+      "lane-practice-tint": {
+        "role": "secondary",
+        "displayName": "Plum Tint",
+        "canonical": "#f0e7f6"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Sulfite Paper",
+        "canonical": "#f5f6f3",
+        "tonalRamp": [
+          "oklch(15% 0.004 120)",
+          "oklch(26% 0.004 120)",
+          "oklch(37% 0.004 120)",
+          "oklch(48% 0.004 120)",
+          "oklch(59% 0.004 120)",
+          "oklch(70% 0.004 120)",
+          "oklch(81% 0.004 120)",
+          "oklch(97% 0.004 120)"
+        ]
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Sheet White",
+        "canonical": "#ffffff"
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#3d4964"
+      },
+      "ink-mute": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#56627a"
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule Grey",
+        "canonical": "#d3d8df"
+      },
+      "rule-soft": {
+        "role": "neutral",
+        "displayName": "Grid Grey",
+        "canonical": "#e4e7eb"
+      },
+      "highlight": {
+        "role": "neutral",
+        "displayName": "Highlighter Blue",
+        "canonical": "#d6e2ff"
+      },
+      "on-lane": {
+        "role": "neutral",
+        "displayName": "Band Type",
+        "canonical": "#ffffff"
+      },
+      "shadow": {
+        "role": "neutral",
+        "displayName": "Shadow Ink",
+        "canonical": "rgb(19 33 58 / 0.32)"
+      },
+      "paper-dark": {
+        "role": "neutral",
+        "displayName": "Night Paper",
+        "canonical": "#0d1526",
+        "darkOf": "paper"
+      },
+      "sheet-dark": {
+        "role": "neutral",
+        "displayName": "Night Sheet",
+        "canonical": "#121c31",
+        "darkOf": "sheet"
+      },
+      "ink-dark": {
+        "role": "primary",
+        "displayName": "Negative Ink",
+        "canonical": "#e6e9ef",
+        "darkOf": "ink"
+      },
+      "ink-soft-dark": {
+        "role": "neutral",
+        "displayName": "Negative Soft Ink",
+        "canonical": "#b9c1cf",
+        "darkOf": "ink-soft"
+      },
+      "ink-mute-dark": {
+        "role": "neutral",
+        "displayName": "Negative Muted Ink",
+        "canonical": "#8f9aae",
+        "darkOf": "ink-mute"
+      },
+      "rule-dark": {
+        "role": "neutral",
+        "displayName": "Night Rule",
+        "canonical": "#2c3852",
+        "darkOf": "rule"
+      },
+      "rule-soft-dark": {
+        "role": "neutral",
+        "displayName": "Night Grid",
+        "canonical": "#1c273f",
+        "darkOf": "rule-soft"
+      },
+      "highlight-dark": {
+        "role": "neutral",
+        "displayName": "Night Highlighter",
+        "canonical": "#26396a",
+        "darkOf": "highlight"
+      },
+      "on-lane-dark": {
+        "role": "neutral",
+        "displayName": "Band Type (dark)",
+        "canonical": "#0b1322",
+        "darkOf": "on-lane"
+      },
+      "shadow-dark": {
+        "role": "neutral",
+        "displayName": "Shadow Ink (dark)",
+        "canonical": "rgb(0 0 0 / 0.55)",
+        "darkOf": "shadow"
+      },
+      "lane-data-dark": {
+        "role": "secondary",
+        "displayName": "Periwinkle Registry Blue",
+        "canonical": "#8aa6ff",
+        "darkOf": "lane-data"
+      },
+      "lane-data-tint-dark": {
+        "role": "secondary",
+        "displayName": "Night Blue Tint",
+        "canonical": "#1a2748",
+        "darkOf": "lane-data-tint"
+      },
+      "lane-backend-dark": {
+        "role": "secondary",
+        "displayName": "Mint Ledger Green",
+        "canonical": "#5fd39b",
+        "darkOf": "lane-backend"
+      },
+      "lane-backend-tint-dark": {
+        "role": "secondary",
+        "displayName": "Night Green Tint",
+        "canonical": "#13301f",
+        "darkOf": "lane-backend-tint"
+      },
+      "lane-frontend-dark": {
+        "role": "secondary",
+        "displayName": "Apricot Stamp Orange",
+        "canonical": "#ff9d66",
+        "darkOf": "lane-frontend"
+      },
+      "lane-frontend-tint-dark": {
+        "role": "secondary",
+        "displayName": "Night Orange Tint",
+        "canonical": "#33211a",
+        "darkOf": "lane-frontend-tint"
+      },
+      "lane-practice-dark": {
+        "role": "secondary",
+        "displayName": "Lilac Seminar Plum",
+        "canonical": "#c89bf0",
+        "darkOf": "lane-practice"
+      },
+      "lane-practice-tint-dark": {
+        "role": "secondary",
+        "displayName": "Night Plum Tint",
+        "canonical": "#291f3b",
+        "darkOf": "lane-practice-tint"
+      }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "The candidate's name only; Archivo expanded (wdth 112)." },
-      "headline": { "displayName": "Headline", "purpose": "The contact band headline only; Archivo expanded." },
-      "quote": { "displayName": "Quote", "purpose": "The reference quotation, max 40ch." },
-      "title": { "displayName": "Title", "purpose": "Section titles for the map, transcript, and reference; 1.5rem below md; condensed." },
-      "title-sm": { "displayName": "Title small", "purpose": "Selected course title in the syllabus panel; condensed." },
-      "field-value": { "displayName": "Field value", "purpose": "Field-table values, period years, lane labels; condensed semibold." },
-      "course-title": { "displayName": "Course title", "purpose": "Titles inside course boxes and course links." },
-      "body": { "displayName": "Body", "purpose": "Summary text at normal width, max 60ch; 1rem below sm." },
-      "body-sm": { "displayName": "Body small", "purpose": "Intros, syllabus lines, transcript, button labels." },
-      "label": { "displayName": "Label", "purpose": "Uppercase tracked mono labels that name a field, column, period, or legend group." },
-      "code": { "displayName": "Code", "purpose": "Course codes, dates, org lines; tabular figures." }
+      "display": {
+        "displayName": "Display",
+        "purpose": "The candidate's name only; Archivo expanded (wdth 112)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "The contact band headline only; Archivo expanded."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "The reference quotation, max 40ch."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section titles for the map, transcript, and reference; 1.5rem below md; condensed."
+      },
+      "title-sm": {
+        "displayName": "Title small",
+        "purpose": "Selected course title in the syllabus panel; condensed."
+      },
+      "field-value": {
+        "displayName": "Field value",
+        "purpose": "Field-table values, period years, lane labels; condensed semibold."
+      },
+      "course-title": {
+        "displayName": "Course title",
+        "purpose": "Titles inside course boxes and course links."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Summary text at normal width, max 60ch; 1rem below sm."
+      },
+      "body-sm": {
+        "displayName": "Body small",
+        "purpose": "Intros, syllabus lines, transcript, button labels."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase tracked mono labels that name a field, column, period, or legend group."
+      },
+      "code": {
+        "displayName": "Code",
+        "purpose": "Course codes, dates, org lines; tabular figures."
+      }
     },
     "borders": [
-      { "name": "rule-structural", "value": "1.5px solid var(--color-ink)", "purpose": "Section openings, sheets, tables, field table, secondary buttons, course boxes (lane colour)." },
-      { "name": "rule-hairline", "value": "1px solid var(--color-rule)", "purpose": "Row and list dividers." },
-      { "name": "status-dashed", "value": "1.5px dashed var(--lane)", "purpose": "In-progress and next course boxes." },
-      { "name": "now-marker", "value": "2px dashed var(--color-ink)", "purpose": "Current-period line on the map." }
+      {
+        "name": "rule-structural",
+        "value": "1.5px solid var(--color-ink)",
+        "purpose": "Section openings, sheets, tables, field table, secondary buttons, course boxes (lane colour)."
+      },
+      {
+        "name": "rule-hairline",
+        "value": "1px solid var(--color-rule)",
+        "purpose": "Row and list dividers."
+      },
+      {
+        "name": "status-dashed",
+        "value": "1.5px dashed var(--lane)",
+        "purpose": "In-progress and next course boxes."
+      },
+      {
+        "name": "now-marker",
+        "value": "2px dashed var(--color-ink)",
+        "purpose": "Current-period line on the map."
+      }
     ],
     "shadows": [
-      { "name": "box-lift", "value": "0 6px 14px -8px rgb(19 33 58 / 0.45)", "purpose": "Course box hover, paired with a 2px upward translate." },
-      { "name": "bottom-sheet", "value": "0 -12px 32px -12px rgb(19 33 58 / 0.28)", "purpose": "Mobile syllabus bottom sheet; removed at lg." }
+      {
+        "name": "box-lift",
+        "value": "0 6px 14px -8px var(--color-shadow)",
+        "purpose": "Course box hover, paired with a 2px upward translate. Shadow colour is rgb(19 33 58 / 0.32) in light and rgb(0 0 0 / 0.55) in dark."
+      },
+      {
+        "name": "bottom-sheet",
+        "value": "0 -12px 32px -12px var(--color-shadow)",
+        "purpose": "Mobile syllabus bottom sheet; removed at lg."
+      }
     ],
     "focus": [
-      { "name": "focus-ring", "value": "outline: 2px solid var(--color-ink); outline-offset: 3px", "purpose": "Global :focus-visible." },
-      { "name": "selected-ring", "value": "box-shadow: 0 0 0 2px var(--color-sheet), 0 0 0 4px var(--color-ink)", "purpose": "Selected course box (2px ink ring offset 2px on sheet)." }
+      {
+        "name": "focus-ring",
+        "value": "outline: 2px solid var(--color-ink); outline-offset: 3px",
+        "purpose": "Global :focus-visible."
+      },
+      {
+        "name": "selected-ring",
+        "value": "box-shadow: 0 0 0 2px var(--color-sheet), 0 0 0 4px var(--color-ink)",
+        "purpose": "Selected course box (2px ink ring offset 2px on sheet)."
+      }
     ],
     "motion": [
-      { "name": "ease-out-expo", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Course box lift and dim, route draw." },
-      { "name": "colour-transition", "value": "200ms", "purpose": "Buttons, links, locale options, chips." },
-      { "name": "box-transition", "value": "opacity, transform, box-shadow 300ms ease-out-expo", "purpose": "Course box hover and dimming." },
-      { "name": "route-draw", "value": "stroke-dashoffset 1 to 0, 700ms ease-out-expo, 140ms stagger per target period", "purpose": "Lit back-end route arrows; disabled under prefers-reduced-motion." },
-      { "name": "dim", "value": "opacity 0.45; saturate(0.6)", "purpose": "Boxes outside the lit chain." }
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Course box lift and dim, route draw."
+      },
+      {
+        "name": "colour-transition",
+        "value": "200ms",
+        "purpose": "Buttons, links, locale and theme options, chips."
+      },
+      {
+        "name": "box-transition",
+        "value": "opacity, transform, box-shadow 300ms ease-out-expo",
+        "purpose": "Course box hover and dimming."
+      },
+      {
+        "name": "route-draw",
+        "value": "stroke-dashoffset 1 to 0, 700ms ease-out-expo, 140ms stagger per target period",
+        "purpose": "Lit back-end route arrows; disabled under prefers-reduced-motion."
+      },
+      {
+        "name": "dim",
+        "value": "opacity 0.45; saturate(0.6)",
+        "purpose": "Boxes outside the lit chain."
+      },
+      {
+        "name": "theme-print",
+        "value": "::view-transition-new(root) clip-path inset(0 0 100% 0) to inset(0 0 0 0), 560ms ease-out-expo; old snapshot held static",
+        "purpose": "An explicit theme switch prints the new theme over the old one, top to bottom. Skipped under prefers-reduced-motion and for OS-driven changes."
+      }
     ],
     "breakpoints": [
-      { "name": "sm", "value": "40rem" },
-      { "name": "md", "value": "48rem" },
-      { "name": "lg", "value": "64rem" },
-      { "name": "xl", "value": "80rem" },
-      { "name": "container-sheet", "value": "90rem" }
-    ]
+      {
+        "name": "sm",
+        "value": "40rem"
+      },
+      {
+        "name": "md",
+        "value": "48rem"
+      },
+      {
+        "name": "lg",
+        "value": "64rem"
+      },
+      {
+        "name": "xl",
+        "value": "80rem"
+      },
+      {
+        "name": "container-sheet",
+        "value": "90rem"
+      }
+    ],
+    "themes": {
+      "default": "light",
+      "mechanism": "Tokens live in @theme static (light values). :root[data-theme=\"dark\"] redefines paper, sheet, ink, ink-soft, ink-mute, rule, rule-soft, highlight, on-lane, shadow, the four lanes and their tints, and sets color-scheme: dark. The Tailwind dark: variant is keyed on [data-theme=\"dark\"]. Each -dark frontmatter key is the dark value of the token named in colorMeta.darkOf.",
+      "selection": "No stored choice: follow prefers-color-scheme, live. An explicit choice from the header theme switch persists in localStorage \"theme\". An inline head script sets <html data-theme> before first paint (no flash).",
+      "browserThemeColor": [
+        {
+          "media": "(prefers-color-scheme: light)",
+          "color": "#f5f6f3"
+        },
+        {
+          "media": "(prefers-color-scheme: dark)",
+          "color": "#0d1526"
+        }
+      ],
+      "inverseField": "The contact band is ink fill with paper text, so it renders navy on the light sheet and pale paper-white with navy type on the dark sheet: always the inverse of the page."
+    }
   },
   "components": [
     {
@@ -86,7 +449,15 @@
       "refersTo": "button-route",
       "description": "Toggles the lit back-end route; green because it is the back-end track.",
       "html": "<button class=\"ds-btn-route\" type=\"button\" aria-pressed=\"false\" onclick=\"this.setAttribute('aria-pressed', this.getAttribute('aria-pressed')==='true'?'false':'true')\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"/><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"/><circle cx=\"18\" cy=\"5\" r=\"3\"/></svg>Highlight back-end route</button>",
-      "css": ".ds-btn-route { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1.5px solid var(--color-lane-backend, #17784a); background: var(--color-sheet, #fff); color: var(--color-lane-backend, #17784a); font-family: var(--font-sans, Archivo, sans-serif); font-size: 0.875rem; font-weight: 600; border-radius: 0; cursor: pointer; transition: background-color 200ms, color 200ms; } .ds-btn-route:hover { background: var(--color-lane-backend-tint, #e1f1e8); } .ds-btn-route[aria-pressed='true'] { background: var(--color-lane-backend, #17784a); color: #fff; } .ds-btn-route:focus-visible { outline: 2px solid var(--color-ink, #13213a); outline-offset: 3px; }"
+      "css": ".ds-btn-route { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1.5px solid var(--color-lane-backend, #17784a); background: var(--color-sheet, #fff); color: var(--color-lane-backend, #17784a); font-family: var(--font-sans, Archivo, sans-serif); font-size: 0.875rem; font-weight: 600; border-radius: 0; cursor: pointer; transition: background-color 200ms, color 200ms; } .ds-btn-route:hover { background: var(--color-lane-backend-tint, #e1f1e8); } .ds-btn-route[aria-pressed='true'] { background: var(--color-lane-backend, #17784a); color: var(--color-on-lane, #fff); } .ds-btn-route:focus-visible { outline: 2px solid var(--color-ink, #13213a); outline-offset: 3px; }"
+    },
+    {
+      "name": "Theme Switch",
+      "kind": "nav",
+      "refersTo": "theme-option",
+      "description": "Twin of the locale switch: sun and moon icon cells in a 1px ink box; the active theme is filled ink.",
+      "html": "<ul class=\"ds-theme\" aria-label=\"Theme\"><li><button type=\"button\" class=\"ds-theme-opt ds-theme-active\" aria-pressed=\"true\" title=\"Light mode\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2\"/><path d=\"M12 20v2\"/><path d=\"m4.93 4.93 1.41 1.41\"/><path d=\"m17.66 17.66 1.41 1.41\"/><path d=\"M2 12h2\"/><path d=\"M20 12h2\"/><path d=\"m6.34 17.66-1.41 1.41\"/><path d=\"m19.07 4.93-1.41 1.41\"/></svg><span class=\"ds-sr\">Light mode</span></button></li><li><button type=\"button\" class=\"ds-theme-opt\" aria-pressed=\"false\" title=\"Dark mode\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" aria-hidden=\"true\"><path d=\"M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z\"/></svg><span class=\"ds-sr\">Dark mode</span></button></li></ul>",
+      "css": ".ds-theme { display: flex; list-style: none; margin: 0; padding: 0; border: 1px solid var(--color-ink, #13213a); } .ds-theme li + li { border-left: 1px solid var(--color-ink, #13213a); } .ds-theme-opt { display: flex; align-items: center; justify-content: center; width: 36px; height: 26px; padding: 0; border: 0; border-radius: 0; background: transparent; color: var(--color-ink, #13213a); cursor: pointer; transition: background-color 200ms, color 200ms; } .ds-theme-opt:hover { background: var(--color-highlight, #d6e2ff); } .ds-theme-active, .ds-theme-active:hover { background: var(--color-ink, #13213a); color: var(--color-paper, #f5f6f3); } .ds-theme-opt:focus-visible { outline: 2px solid var(--color-ink, #13213a); outline-offset: 3px; } .ds-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }"
     },
     {
       "name": "Locale Switch",
@@ -118,7 +489,7 @@
       "refersTo": "course-box-done",
       "description": "Signature box per role: mono code band with status icon, condensed title, mono org; solid for done, dashed for in progress and next.",
       "html": "<div class=\"ds-boxes\"><button class=\"ds-box ds-done\" type=\"button\" style=\"--lane:#2d55c8;--lane-tint:#e7edfb\"><span class=\"ds-band\">DAD101<svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg></span><span class=\"ds-body\"><span class=\"ds-title\">SQL and relational modelling</span><span class=\"ds-org\">Real Jurídica</span></span></button><button class=\"ds-box ds-current\" type=\"button\" style=\"--lane:#17784a;--lane-tint:#e1f1e8\"><span class=\"ds-band\">BCK604<svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" aria-hidden=\"true\" stroke-dasharray=\"3 3\"><circle cx=\"12\" cy=\"12\" r=\"9\"/></svg></span><span class=\"ds-body\"><span class=\"ds-title\">Going deeper in C#/.NET</span><span class=\"ds-org\">Continuous study</span></span></button><button class=\"ds-box ds-next\" type=\"button\" style=\"--lane:#17784a;--lane-tint:#e1f1e8\"><span class=\"ds-band\">BCK605<svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></span><span class=\"ds-body\"><span class=\"ds-title\">A back-end focused role</span><span class=\"ds-org\">Your team?</span></span></button></div>",
-      "css": ".ds-boxes { display: grid; grid-template-columns: repeat(3, 10rem); gap: 10px; padding: 16px; background-color: var(--color-sheet, #fff); background-image: linear-gradient(var(--color-rule-soft, #e4e7eb) 1px, transparent 1px), linear-gradient(90deg, var(--color-rule-soft, #e4e7eb) 1px, transparent 1px); background-size: 1.5rem 1.5rem; } .ds-box { display: flex; flex-direction: column; width: 100%; padding: 0; text-align: left; border: 1.5px solid var(--lane); border-radius: 0; cursor: pointer; transition: opacity 300ms cubic-bezier(0.16,1,0.3,1), transform 300ms cubic-bezier(0.16,1,0.3,1), box-shadow 300ms cubic-bezier(0.16,1,0.3,1); } .ds-box:hover { transform: translateY(-2px); box-shadow: 0 6px 14px -8px rgb(19 33 58 / 0.45); } .ds-box:focus-visible { outline: 2px solid var(--color-ink, #13213a); outline-offset: 3px; } .ds-box[aria-pressed='true'] { box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--color-ink, #13213a); } .ds-done { background: var(--lane-tint); } .ds-current { border-style: dashed; background: var(--color-sheet, #fff); } .ds-next { border-style: dashed; background: transparent; } .ds-band { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 4px 8px; background: var(--lane); color: #fff; font-family: var(--font-mono, 'Spline Sans Mono', monospace); font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.04em; font-variant-numeric: tabular-nums; } .ds-next .ds-band { background: var(--color-sheet, #fff); color: var(--lane); border-bottom: 1.5px dashed var(--lane); } .ds-body { display: flex; flex-direction: column; gap: 4px; padding: 6px 8px 8px; } .ds-title { font-family: var(--font-sans, Archivo, sans-serif); font-variation-settings: 'wdth' 78; font-size: 0.8125rem; line-height: 1.2; font-weight: 600; color: var(--color-ink, #13213a); } .ds-org { font-family: var(--font-mono, 'Spline Sans Mono', monospace); font-size: 0.6875rem; line-height: 1.375; color: var(--color-ink-mute, #56627a); }"
+      "css": ".ds-boxes { display: grid; grid-template-columns: repeat(3, 10rem); gap: 10px; padding: 16px; background-color: var(--color-sheet, #fff); background-image: linear-gradient(var(--color-rule-soft, #e4e7eb) 1px, transparent 1px), linear-gradient(90deg, var(--color-rule-soft, #e4e7eb) 1px, transparent 1px); background-size: 1.5rem 1.5rem; } .ds-box { display: flex; flex-direction: column; width: 100%; padding: 0; text-align: left; border: 1.5px solid var(--lane); border-radius: 0; cursor: pointer; transition: opacity 300ms cubic-bezier(0.16,1,0.3,1), transform 300ms cubic-bezier(0.16,1,0.3,1), box-shadow 300ms cubic-bezier(0.16,1,0.3,1); } .ds-box:hover { transform: translateY(-2px); box-shadow: 0 6px 14px -8px var(--color-shadow, rgb(19 33 58 / 0.32)); } .ds-box:focus-visible { outline: 2px solid var(--color-ink, #13213a); outline-offset: 3px; } .ds-box[aria-pressed='true'] { box-shadow: 0 0 0 2px var(--color-sheet, #fff), 0 0 0 4px var(--color-ink, #13213a); } .ds-done { background: var(--lane-tint); } .ds-current { border-style: dashed; background: var(--color-sheet, #fff); } .ds-next { border-style: dashed; background: transparent; } .ds-band { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 4px 8px; background: var(--lane); color: var(--color-on-lane, #fff); font-family: var(--font-mono, 'Spline Sans Mono', monospace); font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.04em; font-variant-numeric: tabular-nums; } .ds-next .ds-band { background: var(--color-sheet, #fff); color: var(--lane); border-bottom: 1.5px dashed var(--lane); } .ds-body { display: flex; flex-direction: column; gap: 4px; padding: 6px 8px 8px; } .ds-title { font-family: var(--font-sans, Archivo, sans-serif); font-variation-settings: 'wdth' 78; font-size: 0.8125rem; line-height: 1.2; font-weight: 600; color: var(--color-ink, #13213a); } .ds-org { font-family: var(--font-mono, 'Spline Sans Mono', monospace); font-size: 0.6875rem; line-height: 1.375; color: var(--color-ink-mute, #56627a); }"
     },
     {
       "name": "Syllabus Panel",
@@ -126,14 +497,14 @@
       "refersTo": "syllabus-header",
       "description": "Fixed region for the selected course: lane header with rotated status stamp, condensed title, square lane bullets.",
       "html": "<aside class=\"ds-panel\" style=\"--lane:#17784a;--lane-tint:#e1f1e8\"><div class=\"ds-panel-head\"><span>Syllabus · BCK605</span><span class=\"ds-stamp\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg>Next</span></div><div class=\"ds-panel-body\"><h3>A back-end focused role</h3><p class=\"ds-panel-org\">Your team?</p><ul><li>The course still missing from the map.</li><li>A mid-level, full-stack or back-end focused position.</li></ul></div></aside>",
-      "css": ".ds-panel { width: 21rem; border: 1.5px solid var(--color-ink, #13213a); background: var(--color-sheet, #fff); color: var(--color-ink, #13213a); } .ds-panel-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 16px; background: var(--lane); color: #fff; font-family: var(--font-mono, 'Spline Sans Mono', monospace); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.06em; } .ds-stamp { display: inline-flex; align-items: center; gap: 6px; transform: rotate(-3deg); border: 1.5px solid currentColor; padding: 2px 8px; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; } .ds-panel-body { display: flex; flex-direction: column; gap: 8px; padding: 20px; font-family: var(--font-sans, Archivo, sans-serif); } .ds-panel-body h3 { margin: 0; font-variation-settings: 'wdth' 78; font-size: 1.25rem; font-weight: 700; line-height: 1.25; } .ds-panel-org { margin: 0; font-size: 0.875rem; color: var(--color-ink-soft, #3d4964); } .ds-panel-body ul { list-style: none; margin: 12px 0 0; padding: 16px 0 0; border-top: 1px solid var(--color-rule, #d3d8df); display: flex; flex-direction: column; gap: 10px; font-size: 0.9375rem; line-height: 1.625; } .ds-panel-body li { position: relative; padding-left: 16px; } .ds-panel-body li::before { content: ''; position: absolute; top: 0.6em; left: 0; width: 6px; height: 6px; background: var(--lane); }"
+      "css": ".ds-panel { width: 21rem; border: 1.5px solid var(--color-ink, #13213a); background: var(--color-sheet, #fff); color: var(--color-ink, #13213a); } .ds-panel-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 16px; background: var(--lane); color: var(--color-on-lane, #fff); font-family: var(--font-mono, 'Spline Sans Mono', monospace); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.06em; } .ds-stamp { display: inline-flex; align-items: center; gap: 6px; transform: rotate(-3deg); border: 1.5px solid currentColor; padding: 2px 8px; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; } .ds-panel-body { display: flex; flex-direction: column; gap: 8px; padding: 20px; font-family: var(--font-sans, Archivo, sans-serif); } .ds-panel-body h3 { margin: 0; font-variation-settings: 'wdth' 78; font-size: 1.25rem; font-weight: 700; line-height: 1.25; } .ds-panel-org { margin: 0; font-size: 0.875rem; color: var(--color-ink-soft, #3d4964); } .ds-panel-body ul { list-style: none; margin: 12px 0 0; padding: 16px 0 0; border-top: 1px solid var(--color-rule, #d3d8df); display: flex; flex-direction: column; gap: 10px; font-size: 0.9375rem; line-height: 1.625; } .ds-panel-body li { position: relative; padding-left: 16px; } .ds-panel-body li::before { content: ''; position: absolute; top: 0.6em; left: 0; width: 6px; height: 6px; background: var(--lane); }"
     }
   ],
   "narrative": {
     "northStar": "The Department's Printed Curriculum Sheet",
-    "overview": "The system is the Brazilian university *fluxograma curricular*: the printed sheet a department hands new students, with periods as columns, tracks as coloured lanes, each course a box, and arrows showing what is a prerequisite of what. Everything on the page behaves like that document. The ground is cool sulfite paper, the ink is institutional navy, structure comes from ruled lines at 1.5px, and data is set in a registry monospace as if printed by the secretariat. There is no decorative layer. Every mark is a field, a rule, a box, a stamp, or an arrow.\n\nDensity is that of a form: compact labels over firm values, bordered cells, tabular dates. Reading text stays at normal width and relaxed leading so the summary and syllabus lines read easily, while headings, values, and course titles tighten to Archivo's condensed width. The name and the closing contact headline are the only places the face goes expanded and heavy.\n\nColour carries meaning, not mood. Four track hues (data blue, back-end green, front-end orange, practice plum) mark which lane a thing belongs to and nothing else; all other UI is navy on paper. The world explicitly rejects the dark-console developer portfolio and the generic résumé timeline: the page ground is always light paper, and the only full ink field is the closing contact band, where the sheet ends in a solid navy block.",
+    "overview": "The system is the Brazilian university *fluxograma curricular*: the printed sheet a department hands new students, with periods as columns, tracks as coloured lanes, each course a box, and arrows showing what is a prerequisite of what. Everything on the page behaves like that document. The ground is cool sulfite paper, the ink is institutional navy, structure comes from ruled lines at 1.5px, and data is set in a registry monospace as if printed by the secretariat. There is no decorative layer. Every mark is a field, a rule, a box, a stamp, or an arrow.\n\nDensity is that of a form: compact labels over firm values, bordered cells, tabular dates. Reading text stays at normal width and relaxed leading so the summary and syllabus lines read easily, while headings, values, and course titles tighten to Archivo's condensed width. The name and the closing contact headline are the only places the face goes expanded and heavy.\n\nColour carries meaning, not mood. Four track hues (data blue, back-end green, front-end orange, practice plum) mark which lane a thing belongs to and nothing else; all other UI is navy on paper. The world explicitly rejects the dark-console developer portfolio and the generic résumé timeline. Light paper is the default print. The dark theme is the same sheet printed in negative: navy becomes the ground, paper-white becomes the type, the four tracks lighten so they read on navy, and lane bands flip to near-black type. Nothing else changes: same rules, boxes, stamps, and arrows. In either print the only full-bleed inverse field is the closing contact band, filled with ink: a solid navy block at the end of the light sheet, a pale paper-white block at the end of the dark one.",
     "keyCharacteristics": [
-      "Cool paper ground, white sheet surfaces, navy ink; light scheme only.",
+      "Cool paper ground, white sheet surfaces, navy ink by default; a negative dark print (navy ground, paper-white ink) chosen by the OS or the header switch.",
       "Four lane colours used strictly as track identity, each as a solid band plus a pale tint.",
       "Archivo on its width axis: expanded for the name, condensed for headings and data, normal for reading.",
       "Spline Sans Mono for codes, dates, field labels, and period labels.",
@@ -142,15 +513,51 @@
       "Elbow prerequisite arrows; the lit route draws in, period by period."
     ],
     "rules": [
-      { "name": "The Colour Is Law Rule", "body": "A lane colour means one track and appears only on things that belong to that track: lane labels, course boxes, arrows, legend swatches, lane chips, and the syllabus header of the selected course. Never use a lane hue for decoration or for generic UI emphasis; the route toggle is green because it is the back-end route.", "section": "colors" },
-      { "name": "The Band and Tint Rule", "body": "The solid lane colour carries white text (all four clear 4.5:1); the tint only ever sits behind navy ink. Never put lane-coloured text on a tint of another lane, and never use a tint as a band.", "section": "colors" },
-      { "name": "The Paper Ground Rule", "body": "The page is light paper everywhere. The one full-bleed ink field is the closing contact band; do not add others.", "section": "colors" },
-      { "name": "The Width Is Voice Rule", "body": "Expanded width (112) is reserved for the name and the contact headline; condensed width (78) is for headings, values, and titles; reading text stays at normal width (100). Never set a paragraph condensed.", "section": "typography" },
-      { "name": "The Registry Mono Rule", "body": "Spline Sans Mono is for machine-printed data only: codes, dates, field and column labels, the file-number mark in the header. Never set prose in mono. Uppercase tracked mono labels always name a field or column directly attached to its data; they never float above a heading as a kicker.", "section": "typography" },
-      { "name": "The Sheet Grid Rule", "body": "The 24px printed cell grid lives only on the map sheet. The page ground and other surfaces are plain paper or plain white.", "section": "layout" },
-      { "name": "The Printed Flat Rule", "body": "Surfaces are flat at rest. Selection is shown with a 2px ink ring offset 2px, and focus with a 2px ink outline offset 3px, never with glow or elevation.", "section": "elevation" },
-      { "name": "The Square Corner Rule", "body": "No border radius anywhere in the UI.", "section": "shapes" },
-      { "name": "The Stamp Rule", "body": "Rotation belongs to stamps only; a stamp is a small bordered mono uppercase mark that certifies a status or a source.", "section": "shapes" }
+      {
+        "name": "The Colour Is Law Rule",
+        "body": "A lane colour means one track and appears only on things that belong to that track: lane labels, course boxes, arrows, legend swatches, lane chips, and the syllabus header of the selected course. Never use a lane hue for decoration or for generic UI emphasis; the route toggle is green because it is the back-end route.",
+        "section": "colors"
+      },
+      {
+        "name": "The Band and Tint Rule",
+        "body": "The solid lane colour carries on-lane text (white in light, near-black in dark; all four clear 4.5:1 in both prints); the tint only ever sits behind ink. Never put lane-coloured text on a tint of another lane, and never use a tint as a band.",
+        "section": "colors"
+      },
+      {
+        "name": "The Negative Print Rule",
+        "body": "Light paper is the default print; dark is the same sheet in negative, produced only by redefining the colour tokens under `data-theme=\"dark\"`. Components reference tokens (paper, sheet, ink, on-lane, shadow, lanes), never literal colours, so they print correctly both ways. The one full-bleed inverse field is the closing contact band (ink fill: navy in light, pale in dark); do not add others.",
+        "section": "colors"
+      },
+      {
+        "name": "The Width Is Voice Rule",
+        "body": "Expanded width (112) is reserved for the name and the contact headline; condensed width (78) is for headings, values, and titles; reading text stays at normal width (100). Never set a paragraph condensed.",
+        "section": "typography"
+      },
+      {
+        "name": "The Registry Mono Rule",
+        "body": "Spline Sans Mono is for machine-printed data only: codes, dates, field and column labels, the file-number mark in the header. Never set prose in mono. Uppercase tracked mono labels always name a field or column directly attached to its data; they never float above a heading as a kicker.",
+        "section": "typography"
+      },
+      {
+        "name": "The Sheet Grid Rule",
+        "body": "The 24px printed cell grid lives only on the map sheet. The page ground and other surfaces are plain paper or plain white.",
+        "section": "layout"
+      },
+      {
+        "name": "The Printed Flat Rule",
+        "body": "Surfaces are flat at rest. Selection is shown with a 2px ink ring offset 2px, and focus with a 2px ink outline offset 3px, never with glow or elevation.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Square Corner Rule",
+        "body": "No border radius anywhere in the UI.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Stamp Rule",
+        "body": "Rotation belongs to stamps only; a stamp is a small bordered mono uppercase mark that certifies a status or a source.",
+        "section": "shapes"
+      }
     ],
     "dos": [
       "Do tie every lane colour to its track: set `--lane` and `--lane-tint` from the item's lane rather than choosing a hue.",
@@ -158,12 +565,13 @@
       "Do express status through border style: solid for done, dashed for in progress and next.",
       "Do set codes and dates in Spline Sans Mono with tabular figures, and headings and values in condensed Archivo (width 78).",
       "Do keep contact actions and the mobile route toggle at least 44px tall, and show focus as a 2px ink outline offset 3px.",
-      "Do honour reduced motion: no route draw, no smooth scroll."
+      "Do honour reduced motion: no route draw, no smooth scroll, no theme-print transition.",
+      "Do colour every surface, rule, band, and shadow through tokens so it prints in both themes; a new colour ships as a light token plus its `:root[data-theme=\"dark\"]` negative."
     ],
     "donts": [
       "Don't use a lane colour for decoration, generic emphasis, or any element that does not belong to that track.",
       "Don't round corners.",
-      "Don't make the page ground dark or add neon accents; the dark-console portfolio is the rejected world, and the ink contact band is the only dark field.",
+      "Don't build a separate dark look: dark is only the negative print of the same sheet through the token swap, never a console style with glows, neon, or terminal chrome; the contact band stays the only inverse field.",
       "Don't set prose in mono or in condensed width.",
       "Don't place mono uppercase labels above headings as kickers; they label fields and columns only.",
       "Don't extend the cell grid beyond the curriculum map sheet.",

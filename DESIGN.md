@@ -1,6 +1,6 @@
 ---
 name: Fluxograma Curricular
-description: A career printed as a department curriculum sheet; navy ink on cool paper, one colour per track.
+description: A career printed as a department curriculum sheet; navy ink on cool paper, one colour per track, with a negative dark print.
 colors:
   paper: "#f5f6f3"
   sheet: "#ffffff"
@@ -18,6 +18,26 @@ colors:
   lane-frontend-tint: "#fbeae0"
   lane-practice: "#7a3f9e"
   lane-practice-tint: "#f0e7f6"
+  on-lane: "#ffffff"
+  shadow: "rgb(19 33 58 / 0.32)"
+  paper-dark: "#0d1526"
+  sheet-dark: "#121c31"
+  ink-dark: "#e6e9ef"
+  ink-soft-dark: "#b9c1cf"
+  ink-mute-dark: "#8f9aae"
+  rule-dark: "#2c3852"
+  rule-soft-dark: "#1c273f"
+  highlight-dark: "#26396a"
+  on-lane-dark: "#0b1322"
+  shadow-dark: "rgb(0 0 0 / 0.55)"
+  lane-data-dark: "#8aa6ff"
+  lane-data-tint-dark: "#1a2748"
+  lane-backend-dark: "#5fd39b"
+  lane-backend-tint-dark: "#13301f"
+  lane-frontend-dark: "#ff9d66"
+  lane-frontend-tint-dark: "#33211a"
+  lane-practice-dark: "#c89bf0"
+  lane-practice-tint-dark: "#291f3b"
 typography:
   display:
     fontFamily: "Archivo, ui-sans-serif, system-ui, sans-serif"
@@ -133,7 +153,7 @@ components:
     backgroundColor: "{colors.lane-backend-tint}"
   button-route-active:
     backgroundColor: "{colors.lane-backend}"
-    textColor: "{colors.sheet}"
+    textColor: "{colors.on-lane}"
   course-box-done:
     backgroundColor: "{colors.lane-data-tint}"
     textColor: "{colors.ink}"
@@ -146,7 +166,7 @@ components:
     rounded: "{rounded.none}"
   course-band:
     backgroundColor: "{colors.lane-data}"
-    textColor: "{colors.sheet}"
+    textColor: "{colors.on-lane}"
     typography: "{typography.code}"
     padding: "4px 8px"
   course-band-next:
@@ -161,7 +181,7 @@ components:
     padding: "2px 6px"
   lane-label:
     backgroundColor: "{colors.lane-backend}"
-    textColor: "{colors.sheet}"
+    textColor: "{colors.on-lane}"
     padding: "4px 8px"
   field-cell:
     backgroundColor: "{colors.sheet}"
@@ -170,7 +190,7 @@ components:
     padding: "12px 16px"
   syllabus-header:
     backgroundColor: "{colors.lane-backend}"
-    textColor: "{colors.sheet}"
+    textColor: "{colors.on-lane}"
     typography: "{typography.code}"
     padding: "8px 16px"
   locale-option:
@@ -178,6 +198,13 @@ components:
     typography: "{typography.code}"
     padding: "4px 10px"
   locale-option-active:
+    backgroundColor: "{colors.ink}"
+    textColor: "{colors.paper}"
+  theme-option:
+    textColor: "{colors.ink}"
+    height: "26px"
+    width: "36px"
+  theme-option-active:
     backgroundColor: "{colors.ink}"
     textColor: "{colors.paper}"
   contact-band:
@@ -196,10 +223,10 @@ The system is the Brazilian university *fluxograma curricular*: the printed shee
 
 Density is that of a form: compact labels over firm values, bordered cells, tabular dates. Reading text stays at normal width and relaxed leading so the summary and syllabus lines read easily, while headings, values, and course titles tighten to Archivo's condensed width. The name and the closing contact headline are the only places the face goes expanded and heavy.
 
-Colour carries meaning, not mood. Four track hues (data blue, back-end green, front-end orange, practice plum) mark which lane a thing belongs to and nothing else; all other UI is navy on paper. The world explicitly rejects the dark-console developer portfolio and the generic résumé timeline: the page ground is always light paper, and the only full ink field is the closing contact band, where the sheet ends in a solid navy block.
+Colour carries meaning, not mood. Four track hues (data blue, back-end green, front-end orange, practice plum) mark which lane a thing belongs to and nothing else; all other UI is navy on paper. The world explicitly rejects the dark-console developer portfolio and the generic résumé timeline. Light paper is the default print. The dark theme is the same sheet printed in negative: navy becomes the ground, paper-white becomes the type, the four tracks lighten so they read on navy, and lane bands flip to near-black type. Nothing else changes: same rules, boxes, stamps, and arrows. In either print the only full-bleed inverse field is the closing contact band, filled with ink: a solid navy block at the end of the light sheet, a pale paper-white block at the end of the dark one.
 
 **Key Characteristics:**
-- Cool paper ground, white sheet surfaces, navy ink; light scheme only.
+- Cool paper ground, white sheet surfaces, navy ink by default; a negative dark print (navy ground, paper-white ink) chosen by the OS or the header switch.
 - Four lane colours used strictly as track identity, each as a solid band plus a pale tint.
 - Archivo on its width axis: expanded for the name, condensed for headings and data, normal for reading.
 - Spline Sans Mono for codes, dates, field labels, and period labels.
@@ -209,20 +236,23 @@ Colour carries meaning, not mood. Four track hues (data blue, back-end green, fr
 
 ## Colors
 
-A cool, near-neutral paper-and-navy base with four saturated institutional track colours, each paired with its own pale tint.
+A cool, near-neutral paper-and-navy base with four saturated institutional track colours, each paired with its own pale tint. Every colour is a token with a light value and a negative dark value (the `-dark` keys in the frontmatter), applied by redefining the same custom properties under `:root[data-theme="dark"]`.
 
 ### Primary
-- **Institutional Navy Ink** (ink): all text, every structural rule, the primary button, the active locale, the "now" tag, the focus ring, and the closing contact band. It is the voice of the sheet.
+- **Institutional Navy Ink** (ink): all text, every structural rule, the primary button, the active locale and theme options, the "now" tag, the focus ring, and the closing contact band. It is the voice of the sheet. In the dark print it becomes **Negative Ink** (ink-dark), a paper-white, and keeps every one of those roles.
 
 ### Secondary (the tracks)
 - **Registry Blue** (lane-data) with **Blue Tint** (lane-data-tint): the data track.
 - **Ledger Green** (lane-backend) with **Green Tint** (lane-backend-tint): the back-end track, and the one colour that also owns the route toggle, because that button lights the back-end route.
 - **Stamp Orange** (lane-frontend) with **Orange Tint** (lane-frontend-tint): the front-end track.
 - **Seminar Plum** (lane-practice) with **Plum Tint** (lane-practice-tint): teaching, management, and education.
+- In the dark print each track lightens (lane-*-dark: periwinkle blue, mint green, apricot orange, lilac plum) and each tint deepens to a dark wash of its own hue (lane-*-tint-dark), so hue identity holds while the ground inverts.
 
 ### Neutral
-- **Sulfite Paper** (paper): page ground, the in-map mobile key strip, text on ink.
-- **Sheet White** (sheet): every bordered surface (field table, map sheet, syllabus panel, transcript table, current-status boxes) and text on lane bands.
+- **Sulfite Paper** (paper): page ground, the header at 95%, the in-map mobile key strip, text on ink. Dark: **Night Paper** (paper-dark), a deep navy.
+- **Sheet White** (sheet): every bordered surface (field table, map sheet, syllabus panel, transcript table, current-status boxes). Dark: **Night Sheet** (sheet-dark), one step lighter than the dark ground.
+- **Band Type** (on-lane): text and icons on solid lane bands, lane labels, the syllabus header, and the pressed route toggle; white in the light print, near-black navy (on-lane-dark) in the dark print.
+- **Shadow Ink** (shadow): the one shadow colour, translucent navy in light and translucent black (shadow-dark) in dark.
 - **Soft Ink** (ink-soft): summary and secondary prose, organisation names, nav links at rest, primary-button hover.
 - **Muted Ink** (ink-mute): field labels, period labels, dates, org lines in boxes, the de-emphasised "2013–2027" in the map title.
 - **Rule Grey** (rule): hairline dividers inside tables and lists.
@@ -232,9 +262,9 @@ A cool, near-neutral paper-and-navy base with four saturated institutional track
 ### Named Rules
 **The Colour Is Law Rule.** A lane colour means one track and appears only on things that belong to that track: lane labels, course boxes, arrows, legend swatches, lane chips, and the syllabus header of the selected course. Never use a lane hue for decoration or for generic UI emphasis; the route toggle is green because it is the back-end route.
 
-**The Band and Tint Rule.** The solid lane colour carries white text (all four clear 4.5:1); the tint only ever sits behind navy ink. Never put lane-coloured text on a tint of another lane, and never use a tint as a band.
+**The Band and Tint Rule.** The solid lane colour carries on-lane text (white in light, near-black in dark; all four clear 4.5:1 in both prints); the tint only ever sits behind ink. Never put lane-coloured text on a tint of another lane, and never use a tint as a band.
 
-**The Paper Ground Rule.** The page is light paper everywhere. The one full-bleed ink field is the closing contact band; do not add others.
+**The Negative Print Rule.** Light paper is the default print; dark is the same sheet in negative, produced only by redefining the colour tokens under `data-theme="dark"`. Components reference tokens (paper, sheet, ink, on-lane, shadow, lanes), never literal colours, so they print correctly both ways. The one full-bleed inverse field is the closing contact band (ink fill: navy in light, pale in dark); do not add others.
 
 ## Typography
 
@@ -274,8 +304,9 @@ The curriculum map is the structural core. From lg (64rem) it is a grid with a 6
 The system is printed and flat. Depth comes from ink rules (1.5px for structure, 1px for the header and hairlines), white sheets on paper, and tints inside lanes. Two soft shadows exist, both as responses rather than resting decoration.
 
 ### Shadow Vocabulary
-- **Box lift** (`box-shadow: 0 6px 14px -8px rgb(19 33 58 / 0.45)` with a 2px upward translate): a course box on hover.
-- **Bottom sheet** (`box-shadow: 0 -12px 32px -12px rgb(19 33 58 / 0.28)`): the mobile syllabus sheet over the map; removed at lg.
+Both shadows take their colour from the shadow token, so they deepen to translucent black in the dark print.
+- **Box lift** (`box-shadow: 0 6px 14px -8px var(--color-shadow)` with a 2px upward translate): a course box on hover.
+- **Bottom sheet** (`box-shadow: 0 -12px 32px -12px var(--color-shadow)`): the mobile syllabus sheet over the map; removed at lg.
 
 ### Named Rules
 **The Printed Flat Rule.** Surfaces are flat at rest. Selection is shown with a 2px ink ring offset 2px, and focus with a 2px ink outline offset 3px, never with glow or elevation.
@@ -296,7 +327,7 @@ Blunt and form-like: square, bordered, semibold Archivo with a 16px lucide icon.
 - **Primary:** navy ink fill with paper text (Send e-mail); hovers to soft ink.
 - **Secondary:** 1.5px ink border, transparent, ink text (CV, LinkedIn, WhatsApp); hovers to Highlighter Blue. The CV button carries a small mono "PDF" note at 75% opacity.
 - **On ink:** in the contact band the primary inverts to paper with ink text (hover Highlighter Blue) and secondaries take a 70% paper border that firms to full paper on hover.
-- **Route toggle:** 1.5px back-end green border on white with green text, hover green tint; pressed state fills solid green with white text and switches the label. It is a toggle (aria-pressed).
+- **Route toggle:** 1.5px back-end green border on the sheet with green text, hover green tint; pressed state fills solid green with on-lane text and switches the label. It is a toggle (aria-pressed).
 - **Transitions:** colour only, 200ms.
 
 ### Chips
@@ -309,25 +340,27 @@ Blunt and form-like: square, bordered, semibold Archivo with a 16px lucide icon.
 - **Transcript table:** white, 1.5px ink border, mono column heads over a 1.5px rule, 1px rule-grey row dividers; rows become stacked blocks below md.
 
 ### Navigation
-- **Header:** sticky, 48px tall, paper at 95% with a 1px ink bottom rule; a mono file mark on the left, four anchor links in soft ink (hover ink plus underline) hidden below sm, the locale switch on the right.
+- **Header:** sticky, 48px tall, paper at 95% with a 1px ink bottom rule; a mono file mark on the left, four anchor links in soft ink (hover ink plus underline) hidden below sm, and on the right the theme switch then the locale switch, 8px apart.
 - **Locale switch:** two mono uppercase cells in a 1px ink box divided by a 1px rule; the active locale is filled ink with paper text, the other hovers to Highlighter Blue.
+- **Theme switch:** the locale switch's twin: two 36×26px cells in a 1px ink box divided by a 1px rule, each holding a 14px lucide icon (sun for light, moon for dark) with a screen-reader label and title; the active theme is filled ink with paper text, the other hovers to Highlighter Blue. The buttons carry aria-pressed. With no stored choice the page follows prefers-color-scheme, live; a click persists the choice in localStorage `theme`. An inline head script sets `data-theme` on `<html>` before first paint so the page never flashes, and the browser theme colour follows the OS (paper or paper-dark).
+- **Theme print transition:** an explicit switch runs a View Transition that prints the new theme over the old one top to bottom (clip-path inset from 100% to 0, 560ms on the expo-out curve); skipped under reduced motion and for OS-driven changes.
 
 ### Course Box (signature)
 A box per role, parameterised by its lane (`--lane`, `--lane-tint`). A mono code band on top carries the code and a small status icon; below it the condensed title and the mono organisation line.
-- **Done:** solid 1.5px lane border, tint fill, solid lane band with white text, check icon.
+- **Done:** solid 1.5px lane border, tint fill, solid lane band with on-lane text, check icon.
 - **In progress:** dashed lane border on white, solid band, dashed-circle icon.
-- **Next:** dashed lane border, transparent fill, inverted band (white with lane text and a dashed underline), arrow icon.
+- **Next:** dashed lane border, transparent fill, inverted band (sheet with lane text and a dashed underline), arrow icon.
 - **Hover:** 2px lift with the box-lift shadow, 300ms on the expo-out curve.
-- **Selected:** 2px ink ring offset 2px on white; the chain of prerequisites and dependents stays lit while every other box drops to 45% opacity and 60% saturation.
+- **Selected:** 2px ink ring offset 2px on the sheet; the chain of prerequisites and dependents stays lit while every other box drops to 45% opacity and 60% saturation.
 
 ### Prerequisite Arrows (signature)
-Elbow connectors from a box's right edge, dropping in the gutter 7px before the target and entering its left edge, with 6px rounded turns and a small filled triangular head. At rest they are 1.25px navy at 42% opacity; when a chain is lit, its arrows switch to 2.25px in the target's lane colour and the rest fade to near invisibility. With the back-end route on, lit arrows draw in over 700ms on the expo-out curve, staggered 140ms per period. Arrows render from lg only; reduced motion removes the draw.
+Elbow connectors from a box's right edge, dropping in the gutter 7px before the target and entering its left edge, with 6px rounded turns and a small filled triangular head. At rest they are 1.25px ink at 42% opacity; when a chain is lit, its arrows switch to 2.25px in the target's lane colour and the rest fade to near invisibility. With the back-end route on, lit arrows draw in over 700ms on the expo-out curve, staggered 140ms per period. Arrows render from lg only; reduced motion removes the draw.
 
 ### Syllabus Panel (signature)
 A fixed region whose contents change with the selection: a lane-coloured header with the mono "Syllabus · CODE" and a large rotated status stamp, then the condensed title, organisation and mono dates, square lane-coloured bullets for syllabus lines, and the Requires/Unlocks course links. Sticky on desktop with a 1.5px ink border; a bottom sheet up to 62dvh with a close button below lg. Its content is announced politely to assistive tech.
 
 ### Contact Band
-The closing full-bleed navy field: expanded headline, paper body at 80%, inverted contact buttons, mono e-mail and phone, and a mono update note over a 25% paper rule.
+The closing full-bleed ink field: expanded headline, paper body at 80%, inverted contact buttons, mono e-mail and phone, and a mono update note over a 25% paper rule. Filled with ink and set in paper, it inverts with the theme: a navy block on the light sheet, a pale paper-white block with navy type on the dark sheet. It is always the inverse of the page.
 
 ## Do's and Don'ts
 
@@ -337,12 +370,13 @@ The closing full-bleed navy field: expanded headline, paper body at 80%, inverte
 - **Do** express status through border style: solid for done, dashed for in progress and next.
 - **Do** set codes and dates in Spline Sans Mono with tabular figures, and headings and values in condensed Archivo (width 78).
 - **Do** keep contact actions and the mobile route toggle at least 44px tall, and show focus as a 2px ink outline offset 3px.
-- **Do** honour reduced motion: no route draw, no smooth scroll.
+- **Do** honour reduced motion: no route draw, no smooth scroll, no theme-print transition.
+- **Do** colour every surface, rule, band, and shadow through tokens so it prints in both themes; a new colour ships as a light token plus its `:root[data-theme="dark"]` negative.
 
 ### Don't:
 - **Don't** use a lane colour for decoration, generic emphasis, or any element that does not belong to that track.
 - **Don't** round corners.
-- **Don't** make the page ground dark or add neon accents; the dark-console portfolio is the rejected world, and the ink contact band is the only dark field.
+- **Don't** build a separate dark look: dark is only the negative print of the same sheet through the token swap, never a console style with glows, neon, or terminal chrome; the contact band stays the only inverse field.
 - **Don't** set prose in mono or in condensed width.
 - **Don't** place mono uppercase labels above headings as kickers; they label fields and columns only.
 - **Don't** extend the cell grid beyond the curriculum map sheet.

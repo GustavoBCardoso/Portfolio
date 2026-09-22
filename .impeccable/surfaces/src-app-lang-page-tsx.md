@@ -24,7 +24,7 @@ THESIS: His career laid out as a course curriculum map (fluxograma curricular): 
 
 OWN-WORLD: The department's printed curriculum sheet. Cool sulfite-paper ground, institutional navy ink, a thin cell grid. Area boxes in a full palette (data blue, front-end orange, back-end green, teaching and management plum) with a solid code band and a pale tint. Elbow prerequisite arrows. Status stamps (completed / in progress / next). Archivo in variable widths, Spline Sans Mono for codes and dates.
 
-STORY: The visitor sees 7+ years of real work, a strong front-end foundation, a chain that already goes through SQL, PHP/Node, Spring, and C#/.NET, and an open, deliberate move toward back-end. They believe it because every box points to a real role, then they contact him or download the CV.
+STORY: The visitor sees 7+ years of real work, a strong front-end foundation, a chain that already goes through SQL, PHP/Node, Spring, and C#/.NET, and a deliberate move toward back-end with Java and Spring Boot as the target stack. They believe it because every box points to a real role, then they contact him or download the CV.
 
 FIRST VIEWPORT: A form-style header with his name in large Archivo, a one-line summary, and a field table (Level, Route, Status). Contact and CV actions sit right below. The full-width curriculum map (2013–2027, four lanes, six periods) takes the rest of the viewport, with a sticky syllabus panel on the right and a "Highlight back-end route" button in the map's toolbar.
 

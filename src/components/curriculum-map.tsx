@@ -227,7 +227,7 @@ export function CurriculumMap({ lang, t }: Props) {
             aria-pressed={routeOn}
             className={`inline-flex items-center gap-2 border-[1.5px] px-3.5 py-2 text-sm font-semibold transition-colors duration-200 ${
               routeOn
-                ? "border-lane-backend bg-lane-backend text-white"
+                ? "border-lane-backend bg-lane-backend text-on-lane"
                 : "border-lane-backend bg-sheet text-lane-backend hover:bg-lane-backend-tint"
             }`}
           >
@@ -249,7 +249,7 @@ export function CurriculumMap({ lang, t }: Props) {
                 style={{ ...laneVars(lane.id), "--row": i + 2 } as CSSProperties}
                 className="hidden lg:col-start-1 lg:row-(--row) lg:block"
               >
-                <span className="inline-block bg-(--lane) px-2 py-1 text-[0.8125rem] leading-tight font-semibold font-condensed text-white">
+                <span className="inline-block bg-(--lane) px-2 py-1 text-[0.8125rem] leading-tight font-semibold font-condensed text-on-lane">
                   {lane.name[lang]}
                 </span>
               </div>
@@ -301,7 +301,7 @@ export function CurriculumMap({ lang, t }: Props) {
                       aria-pressed={routeOn}
                       className={`inline-flex min-h-11 items-center justify-center gap-2 border-[1.5px] px-3 text-sm font-semibold transition-colors duration-200 ${
                         routeOn
-                          ? "border-lane-backend bg-lane-backend text-white"
+                          ? "border-lane-backend bg-lane-backend text-on-lane"
                           : "border-lane-backend bg-sheet text-lane-backend"
                       }`}
                     >
@@ -371,10 +371,10 @@ export function CurriculumMap({ lang, t }: Props) {
       <aside
         aria-label={t.panelLabel}
         style={laneVars(panel.lane)}
-        className={`${sheetOpen ? "fixed" : "hidden"} inset-x-0 bottom-0 z-40 max-h-[62dvh] overflow-y-auto border-t-[1.5px] border-ink bg-sheet shadow-[0_-12px_32px_-12px_rgb(19_33_58/0.28)] lg:sticky lg:top-16 lg:block lg:max-h-[calc(100dvh-5rem)] lg:self-start lg:border-[1.5px] lg:shadow-none`}
+        className={`${sheetOpen ? "fixed" : "hidden"} inset-x-0 bottom-0 z-40 max-h-[62dvh] overflow-y-auto border-t-[1.5px] border-ink bg-sheet shadow-[0_-12px_32px_-12px_var(--color-shadow)] lg:sticky lg:top-16 lg:block lg:max-h-[calc(100dvh-5rem)] lg:self-start lg:border-[1.5px] lg:shadow-none`}
       >
         <div aria-live="polite">
-          <div className="flex items-center justify-between gap-3 bg-(--lane) px-4 py-2 text-white">
+          <div className="flex items-center justify-between gap-3 bg-(--lane) px-4 py-2 text-on-lane">
             <span className="font-mono text-xs font-medium tracking-[0.06em]">
               {t.panelLabel} · {panel.code}
             </span>
@@ -498,7 +498,7 @@ function CourseBox({
     current: "border-dashed border-(--lane) bg-sheet",
     next: "border-dashed border-(--lane) bg-transparent",
   }[course.status];
-  const band = course.status === "next" ? "bg-sheet text-(--lane) border-b-[1.5px] border-dashed border-(--lane)" : "bg-(--lane) text-white";
+  const band = course.status === "next" ? "bg-sheet text-(--lane) border-b-[1.5px] border-dashed border-(--lane)" : "bg-(--lane) text-on-lane";
 
   return (
     <button
@@ -507,7 +507,7 @@ function CourseBox({
       aria-pressed={pressed}
       onClick={() => onSelect(course.code)}
       style={laneVars(course.lane)}
-      className={`group relative flex w-full scroll-mt-20 flex-col border-[1.5px] text-left transition-[opacity,transform,box-shadow] duration-300 ease-(--ease-out-expo) hover:-translate-y-0.5 hover:shadow-[0_6px_14px_-8px_rgb(19_33_58/0.45)] ${shell} ${
+      className={`group relative flex w-full scroll-mt-20 flex-col border-[1.5px] text-left transition-[opacity,transform,box-shadow] duration-300 ease-(--ease-out-expo) hover:-translate-y-0.5 hover:shadow-[0_6px_14px_-8px_var(--color-shadow)] ${shell} ${
         dim ? "opacity-45 saturate-[0.6]" : "opacity-100"
       } ${pressed ? "ring-2 ring-ink ring-offset-2 ring-offset-sheet" : ""}`}
     >

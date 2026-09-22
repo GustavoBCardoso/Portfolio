@@ -4,6 +4,7 @@ import { Archivo, Spline_Sans_Mono } from "next/font/google";
 import { hasLocale, locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { SiteHeader } from "@/components/site-header";
+import { themeInitScript } from "@/lib/theme";
 import "../globals.css";
 
 const archivo = Archivo({
@@ -17,7 +18,10 @@ const splineMono = Spline_Sans_Mono({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#f5f6f3",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f5f6f3" },
+    { media: "(prefers-color-scheme: dark)", color: "#0d1526" },
+  ],
 };
 
 export function generateStaticParams() {
@@ -59,7 +63,12 @@ export default async function RootLayout({
     <html
       lang={lang === "pt" ? "pt-BR" : "en"}
       className={`${archivo.variable} ${splineMono.variable}`}
+      // data-theme is set by the inline script before hydration.
+      suppressHydrationWarning
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body className="min-h-dvh">
         <SiteHeader lang={lang} dict={dict} />
         {children}

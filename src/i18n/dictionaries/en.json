@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Gustavo Borges Cardoso · Full-Stack Developer",
-    "description": "Mid-level full-stack developer with 7+ years building web applications. Strong front-end foundation, now taking the back-end route with C#/.NET, APIs and data."
+    "description": "Mid-level full-stack developer with 7+ years building web applications. Strong front-end foundation and a current back-end focus on Java and Spring Boot, APIs and data."
   },
   "nav": {
     "label": "Sections",
@@ -9,11 +9,14 @@
     "history": "Transcript",
     "reference": "Reference",
     "contact": "Contact",
-    "language": "Language"
+    "language": "Language",
+    "theme": "Theme",
+    "themeLight": "Light mode",
+    "themeDark": "Dark mode"
   },
   "hero": {
     "name": "Gustavo Borges Cardoso",
-    "summary": "Mid-level full-stack developer with 7+ years in web applications, a strong front-end foundation, and now on the back-end route with C#/.NET, APIs and data.",
+    "summary": "Mid-level full-stack developer with 7+ years in web applications, a strong front-end foundation, and a current back-end focus on Java and Spring Boot, APIs and data.",
     "fields": [
       { "label": "Program", "value": "Full-Stack Development" },
       { "label": "Level", "value": "Mid-level" },
@@ -61,7 +64,7 @@
   },
   "contact": {
     "title": "Have a role on this route?",
-    "body": "I'm looking for a mid-level role, full-stack or back-end focused, on a team that keeps improving its product and its engineering, where I can keep learning and solving real problems. I reply by email, LinkedIn or WhatsApp."
+    "body": "I'm looking for a mid-level Full-Stack or Back-end role, ideally with Java and Spring Boot, on a team that keeps improving its product and its engineering, where I can keep learning and solving real problems. I reply by email, LinkedIn or WhatsApp."
   },
   "footer": {
     "updated": "Map updated September 2026"

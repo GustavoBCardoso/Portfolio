@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Gustavo Borges Cardoso · Full-Stack Developer",
+    "description": "Mid-level full-stack developer with 7+ years building web applications. Strong front-end foundation, now taking the back-end route with C#/.NET, APIs and data."
+  },
+  "nav": {
+    "label": "Sections",
+    "map": "Map",
+    "history": "Transcript",
+    "reference": "Reference",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "hero": {
+    "name": "Gustavo Borges Cardoso",
+    "summary": "Mid-level full-stack developer with 7+ years in web applications, a strong front-end foundation, and now on the back-end route with C#/.NET, APIs and data.",
+    "fields": [
+      { "label": "Program", "value": "Full-Stack Development" },
+      { "label": "Level", "value": "Mid-level" },
+      { "label": "Route", "value": "Full-Stack → Back-end" },
+      { "label": "Status", "value": "Open to opportunities" }
+    ]
+  },
+  "actions": {
+    "email": "Send an email",
+    "cv": "Download CV",
+    "cvNote": "PDF, Portuguese",
+    "linkedin": "LinkedIn",
+    "whatsapp": "WhatsApp"
+  },
+  "map": {
+    "title": "Curriculum map",
+    "intro": "Each box is a real role or course, and the arrows show what led to what. Select a box to read its syllabus.",
+    "route": "Highlight back-end route",
+    "routeOn": "Back-end route highlighted",
+    "now": "now",
+    "legendLanes": "Tracks",
+    "legendStatus": "Status",
+    "status": { "done": "Completed", "current": "In progress", "next": "Next" },
+    "panelLabel": "Syllabus",
+    "requires": "Prerequisites",
+    "unlocks": "Unlocks",
+    "none": "None",
+    "close": "Close syllabus"
+  },
+  "history": {
+    "title": "Transcript",
+    "intro": "Job titles exactly as they appear on my CV.",
+    "role": "Role",
+    "org": "Organization",
+    "dates": "Dates",
+    "lanes": "Tracks",
+    "education": "Education",
+    "certifications": "Continuing education"
+  },
+  "reference": {
+    "title": "Reference",
+    "quote": "During his time with the company, Gustavo performed his duties with professionalism, commitment, and responsibility, demonstrating strong technical skills, efficiency in carrying out his responsibilities, and a consistent focus on achieving results.",
+    "source": "Akna Tecnologia da Informação",
+    "detail": "Letter of recommendation, September 2, 2026"
+  },
+  "contact": {
+    "title": "Have a role on this route?",
+    "body": "I'm looking for a mid-level role, full-stack or back-end focused, on a team that keeps improving its product and its engineering, where I can keep learning and solving real problems. I reply by email, LinkedIn or WhatsApp."
+  },
+  "footer": {
+    "updated": "Map updated September 2026"
+  }
+}

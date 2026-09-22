@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- A single curriculum box: back-end band over its tint, the course still in progress. -->
+  <rect x="1.5" y="1.5" width="29" height="29" fill="#e1f1e8" stroke="#17784a" stroke-width="3" stroke-dasharray="4 2.5"/>
+  <rect x="1.5" y="1.5" width="29" height="10" fill="#17784a"/>
+  <path d="M8 21 H22 M18 17 L22 21 L18 25" fill="none" stroke="#13213a" stroke-width="2.5" stroke-linecap="square"/>
+</svg>

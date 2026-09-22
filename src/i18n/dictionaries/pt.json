@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Gustavo Borges Cardoso · Desenvolvedor Full-Stack",
+    "description": "Desenvolvedor full-stack pleno com mais de 7 anos em aplicações web. Base sólida em front-end, cursando a rota back-end com C#/.NET, APIs e dados."
+  },
+  "nav": {
+    "label": "Seções",
+    "map": "Grade",
+    "history": "Histórico",
+    "reference": "Parecer",
+    "contact": "Contato",
+    "language": "Idioma"
+  },
+  "hero": {
+    "name": "Gustavo Borges Cardoso",
+    "summary": "Desenvolvedor full-stack pleno com mais de 7 anos em aplicações web, base forte em front-end e agora na rota back-end com C#/.NET, APIs e dados.",
+    "fields": [
+      { "label": "Curso", "value": "Desenvolvimento Full-Stack" },
+      { "label": "Nível", "value": "Pleno" },
+      { "label": "Rota", "value": "Full-Stack → Back-end" },
+      { "label": "Situação", "value": "Aberto a oportunidades" }
+    ]
+  },
+  "actions": {
+    "email": "Enviar e-mail",
+    "cv": "Baixar CV",
+    "cvNote": "PDF",
+    "linkedin": "LinkedIn",
+    "whatsapp": "WhatsApp"
+  },
+  "map": {
+    "title": "Grade curricular",
+    "intro": "Cada caixa é uma experiência real, e as setas mostram o que foi pré-requisito do quê. Selecione uma caixa para ver a ementa.",
+    "route": "Destacar rota back-end",
+    "routeOn": "Rota back-end destacada",
+    "now": "agora",
+    "legendLanes": "Núcleos",
+    "legendStatus": "Situação",
+    "status": { "done": "Concluída", "current": "Cursando", "next": "Próxima" },
+    "panelLabel": "Ementa",
+    "requires": "Pré-requisitos",
+    "unlocks": "Libera",
+    "none": "Nenhum",
+    "close": "Fechar ementa"
+  },
+  "history": {
+    "title": "Histórico",
+    "intro": "Os cargos exatamente como estão no CV.",
+    "role": "Cargo",
+    "org": "Instituição",
+    "dates": "Período",
+    "lanes": "Núcleos",
+    "education": "Formação",
+    "certifications": "Educação continuada"
+  },
+  "reference": {
+    "title": "Parecer",
+    "quote": "Durante o período em que integrou nosso quadro de colaboradores, Gustavo desempenhou suas atividades com profissionalismo, comprometimento e responsabilidade, demonstrando capacidade técnica, eficiência na execução de suas atribuições e foco na entrega de resultados.",
+    "source": "Akna Tecnologia da Informação",
+    "detail": "Carta de recomendação, 2 de setembro de 2026"
+  },
+  "contact": {
+    "title": "Tem uma vaga para esta rota?",
+    "body": "Busco uma posição pleno, full-stack ou com foco em back-end, num time que evolua o produto e a técnica, onde eu siga aprendendo e resolvendo problemas reais. Respondo por e-mail, LinkedIn ou WhatsApp."
+  },
+  "footer": {
+    "updated": "Grade atualizada em setembro de 2026"
+  }
+}

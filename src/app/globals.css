@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+/*
+ * World: "Fluxograma Curricular" — the department's printed curriculum sheet.
+ * Colour is law: each lane colour means one track and is never decoration.
+ */
+@theme static {
+  /* Paper and ink */
+  --color-paper: #f5f6f3;
+  --color-sheet: #ffffff;
+  --color-ink: #13213a;
+  --color-ink-soft: #3d4964;
+  --color-ink-mute: #56627a;
+  --color-rule: #d3d8df;
+  --color-rule-soft: #e4e7eb;
+  --color-highlight: #d6e2ff;
+
+  /* Tracks (band colours carry white text at ≥4.5:1) */
+  --color-lane-data: #2d55c8;
+  --color-lane-data-tint: #e7edfb;
+  --color-lane-backend: #17784a;
+  --color-lane-backend-tint: #e1f1e8;
+  --color-lane-frontend: #b84c19;
+  --color-lane-frontend-tint: #fbeae0;
+  --color-lane-practice: #7a3f9e;
+  --color-lane-practice-tint: #f0e7f6;
+
+  /* Faces (variables come from next/font in the root layout) */
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-spline-mono), ui-monospace, monospace;
+
+  --container-sheet: 90rem;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--color-ink-mute) var(--color-paper);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-variation-settings: "wdth" 100;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--color-highlight);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 3px;
+  }
+
+  a {
+    text-underline-offset: 0.22em;
+    text-decoration-thickness: 1px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p,
+  li {
+    text-wrap: pretty;
+  }
+}
+
+@utility font-condensed {
+  font-variation-settings: "wdth" 78;
+}
+
+@utility font-expanded {
+  font-variation-settings: "wdth" 112;
+}
+
+/* The printed cell grid behind the curriculum map. */
+@utility sheet-grid {
+  background-color: var(--color-sheet);
+  background-image:
+    linear-gradient(var(--color-rule-soft) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-rule-soft) 1px, transparent 1px);
+  background-size: 1.5rem 1.5rem;
+  background-position: -1px -1px;
+}
+
+/* Arrows of the lit route draw in, one after another. */
+@keyframes draw-route {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.route-draw {
+  stroke-dasharray: 1;
+  animation: draw-route 700ms var(--ease-out-expo) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-draw {
+    animation: none;
+  }
+}

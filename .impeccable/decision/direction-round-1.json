@@ -1,0 +1,125 @@
+{
+  "title": "Escolha o mundo visual do portfólio",
+  "question": "O sorteio escolheu o Fluxograma Curricular. Fique com ele, adote uma alternativa ou sorteie de novo.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Fluxograma Curricular",
+      "kicker": "THE ROLL",
+      "lineage": "o fluxograma de disciplinas de um curso de Sistemas de Informação: períodos em colunas, caixas por núcleo, setas de pré-requisito",
+      "thesis": "A carreira como uma grade curricular: cada experiência é pré-requisito da próxima, e a última coluna, back-end, está 'em curso'.",
+      "palette": ["#f6f7f4", "#12213b", "#1d8a52", "#e2622b", "#2f5bd3"],
+      "materials": ["folha impressa da coordenação do curso", "caixas de disciplina coloridas por núcleo", "setas de pré-requisito", "carimbos de situação (concluída, cursando)"],
+      "viewport": "À esquerda, o cabeçalho da grade com nome, cargo, 'Rota: Full-Stack → Back-end' e os botões E-mail, LinkedIn e CV. À direita e em largura total, o fluxograma de 2013 a 2027 com as setas levando até a coluna tracejada 'em curso'.",
+      "risk": "Se as caixas ficarem genéricas, vira um diagrama de flowchart qualquer. O rigor da folha institucional precisa ser total.",
+      "raised": [
+        { "from": "challenger-pc98", "raise": "Painel fixo: ao selecionar uma caixa, o conteúdo muda num painel lateral que nunca se move; o layout não pula." },
+        { "from": "challenger-coffeehouse", "raise": "Vocabulário de estado completo: toda caixa leva um carimbo de situação (concluída, cursando, próxima), e esse é o único jeito de marcar status." },
+        { "from": "challenger-arcade", "raise": "Cor como lei: cada cor significa um núcleo (dados, front-end, back-end, ensino) e nunca aparece como decoração." },
+        { "from": "challenger-drum-machine", "raise": "Uma linha do tempo contínua sob as colunas, com um marcador 'agora' que sempre mostra onde a carreira está." },
+        { "from": "challenger-miura", "raise": "Implantação progressiva: no celular, a grade abre de um resumo compacto para os períodos completos, um por vez." },
+        { "from": "challenger-cityscape", "raise": "Seguir uma rota: o botão 'Rota back-end' acende só a cadeia de pré-requisitos que leva ao back-end, do SQL de 2013 até o C#/.NET de hoje." }
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Trace de Requisição",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "a cascata de spans de um APM (Kibana/Elastic APM), que você já usou na Akna",
+      "thesis": "A carreira como uma requisição atravessando a stack: cada emprego é um span, com a interface por cima e o banco por baixo.",
+      "palette": ["#0e1116", "#e6e8eb", "#f2b134", "#4cc38a"],
+      "materials": ["cascata de spans", "régua de tempo", "atributos em chave-valor"],
+      "viewport": "Um único trace de 2013 a hoje ocupa a largura toda: os spans aninhados mostram front-end chamando serviços, e os serviços chamando SQL.",
+      "risk": "É a família de estética de 'ferramenta dev escura', perto do que o Stitch já fez e de onde a maioria dos portfólios de dev termina."
+    },
+    {
+      "id": "challenger-drum-machine",
+      "label": "Step Row de Bateria Eletrônica",
+      "verdict": "competitive",
+      "lineage": "drum machines do início dos anos 80",
+      "thesis": "Cada ano é um step de uma linha de 16 passos; os passos acesos são seus cargos, e a luz corrente marca o agora.",
+      "palette": ["#1c1c1e", "#d93a2b", "#f08a24", "#f4d03f", "#f2f2ee"],
+      "materials": ["painel carvão", "teclas de step coloridas", "serigrafia branca", "display de segmentos"],
+      "viewport": "Uma única linha de 16 steps (2013 a 2028) atravessa a página; tocar num step abre o cargo daquele período.",
+      "case": "A linha contínua lê uma carreira muito rápido (ganha em clareza), mas recrutadores não se identificam com um instrumento musical.",
+      "risk": "Pode ler como brincadeira se o conteúdo não for sério e denso."
+    },
+    {
+      "id": "challenger-pc98",
+      "label": "Tela PC-98 de 16 cores",
+      "verdict": "declined",
+      "lineage": "computadores japoneses de 16 cores",
+      "thesis": "O portfólio como uma visual novel pixelada.",
+      "palette": ["#000000", "#5555ff", "#ff55ff", "#ffffff"],
+      "materials": ["pontilhado", "fonte bitmap"],
+      "viewport": "Janela de texto embaixo, retrato à direita.",
+      "risk": "Retro-novidade, e não existe foto real para o retrato.",
+      "case": "Funde mal: ritmo de leitura lento para quem precisa decidir rápido.",
+      "kept": "Regiões fixas que trocam de conteúdo sem mexer no layout."
+    },
+    {
+      "id": "challenger-coffeehouse",
+      "label": "Identidade de Cafeteria dos Anos 90",
+      "verdict": "declined",
+      "lineage": "identidades corporativas terrosas dos anos 90",
+      "thesis": "Selos em xilogravura sobre papel rasgado.",
+      "palette": ["#b5552f", "#6b7a3a", "#d9a740", "#e9dcc3"],
+      "materials": ["kraft", "carimbo"],
+      "viewport": "Seções como estações de um mapa.",
+      "risk": "Não tem nada a ver com engenharia de software.",
+      "case": "Perde nos dois eixos.",
+      "kept": "Carimbo de conclusão como vocabulário de estado."
+    },
+    {
+      "id": "challenger-arcade",
+      "label": "Arcade CRT",
+      "verdict": "declined",
+      "lineage": "gabinetes de arcade",
+      "thesis": "Pixels grossos com scanlines.",
+      "palette": ["#000000", "#ff004d", "#29adff", "#ffec27"],
+      "materials": ["fósforo", "scanline"],
+      "viewport": "Tela de jogo com placar.",
+      "risk": "Gamificação de um currículo.",
+      "case": "Perde nos dois eixos.",
+      "kept": "Cor com significado fixo, nunca decorativa."
+    },
+    {
+      "id": "challenger-miura",
+      "label": "Dobra Miura",
+      "verdict": "declined",
+      "lineage": "painéis desdobráveis aeroespaciais",
+      "thesis": "Uma folha que se desdobra num gesto.",
+      "palette": ["#f7f7f5", "#c9a13b", "#8a8a86", "#a9c4de"],
+      "materials": ["papel vincado", "folha de ouro"],
+      "viewport": "Pacote dobrado que abre na página inteira.",
+      "risk": "Técnica cara para pouco ganho de conteúdo.",
+      "case": "Perde nos dois eixos.",
+      "kept": "Implantação progressiva de compacto para completo."
+    },
+    {
+      "id": "challenger-cityscape",
+      "label": "Cidade de Noite com Chuva",
+      "verdict": "declined",
+      "lineage": "noturnos urbanos",
+      "thesis": "Skyline, trilhos e reflexos.",
+      "palette": ["#12254d", "#0a0a0f", "#f2a93b", "#c9d3dc"],
+      "materials": ["neon", "asfalto molhado"],
+      "viewport": "Skyline em faixas sincronizadas.",
+      "risk": "Atmosfera sem informação.",
+      "case": "Perde nos dois eixos.",
+      "kept": "Seguir uma única rota iluminada pelo conjunto."
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "canon": true,
+  "canonCard": {
+    "label": "O padrão da categoria",
+    "thesis": "O portfólio de desenvolvedor que todo recrutador já viu, executado com capricho.",
+    "palette": ["#0b0f19", "#e5e7eb", "#64ffda"],
+    "materials": ["grid limpo", "chips de tecnologia", "linha do tempo vertical"],
+    "viewport": "Nome e cargo grandes, um parágrafo de apresentação e botões de contato, seguidos de skills, experiência, projetos e contato.",
+    "risk": "Indistinguível dos outros candidatos, por definição."
+  },
+  "steer": true
+}
